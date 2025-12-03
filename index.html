@@ -1,0 +1,42 @@
+<!-- Vi startar upp en doctype deklaration för att tala 
+om för webbläsaren att dokumentet är HTML5-dokument. -->
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupp 45</title>
+    <!-- Här har vi länkat in en css-fil för att vi ska kunna style:a vår webbrowser. -->
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body>
+    <!-- Rubriken för hemsidan. -->
+    <h1>Labb 2 - Grupp 45</h1>
+    <!-- Skapat div element som vi satt klassen "continer" på, 
+    inkluderat flertalet "children". -->
+    <div class="container">
+        <!-- Skapat label och inputfält som vi applicerat id, namn och klass värden på. -->
+        <div>
+            <label class="textlabel">Färg</label>
+            <input type="text" id="color" name="color" class="textfield">
+        </div>
+        <div>
+            <label class="textlabel">Innehåll</label>
+            <input type="text" id="content" name="content" class="textfield">
+        </div>
+        <!-- Skapat en checkbox som vi satt en label på vid namn "Stil på box". 
+        Även denna checkbox har id, namn och klass värden. -->
+        <div>
+            <label class="textlabel">Stil på box</label>
+            <input type="checkbox" id="divStyle" name="divStyle" class="checkbox">
+        </div>
+        <!-- Skapat ett knapp-element i namn "button". -->
+        <button type="button" id="btn">Ta bort</button>
+        <!-- Skapat ett tomt outputfält. -->
+        <div id="divEmpty" class="empty-box"></div>
+    </div>
+    <!-- Kopplat javascripten till vår HTML kod med src. -->
+    <script src="script.js"></script>
+</body>
+</html>

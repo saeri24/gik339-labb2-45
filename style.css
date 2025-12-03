@@ -1,0 +1,68 @@
+/* Vi använder box-sizing: border-box; för att behålla containerns storlek 
+och för att inkludera redigering av exempelvis padding inom denna storlek. */
+* {
+    box-sizing: border-box;
+}
+
+/* Bakgrunsfärg på hemsidan. */
+body {
+    background: #124559;
+}
+
+/* Redigering för hemsidans rubrik. */
+h1 {
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+/* Style för containern. */
+.container {
+    background: #E9ECEF;
+    width: 500px;
+    margin: 37px auto;
+    padding: 40px 32px;
+    border-radius: 8px;
+}
+
+/* Skapat flexbox för att placera element på önskad plats. */
+.container div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Style för all label på hemsidan. */
+.textlabel {
+    flex: 1;
+    align-items: left;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    color: #495057;
+}
+
+/* Style för all input på hemsidan. */
+.textfield {
+    padding: 3px;
+    border-radius: 4px;
+    border: 1px solid #495057;
+    width: 280px;
+}
+
+/* Style för "Ta bort" knappen. */
+#btn {
+    padding: 3px 20px;
+    color: #495057;
+    background: #DEE2E6;
+    border-radius: 4px;
+    border: 1px solid #495057;
+}
+
+/* Style för den tomma output-rutan. */
+.empty-box {
+    border: 1px solid gray;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+}
